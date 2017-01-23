@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/mi',function(){
   return json_encode(['gastos'=> 1234]);
 });
+
+Route::get('/expense',function(){
+  return view('expense');
+});
